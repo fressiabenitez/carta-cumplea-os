@@ -771,5 +771,16 @@
 
 })();
 </script>
+<!-- Reproductor de música -->
+<audio id="musicaFondo" loop src="Rauw Alejandro - Algo Mágico.mp3"></audio>
+
+<script>
+  document.addEventListener('click', function() {
+    var audio = document.getElementById('musicaFondo');
+    if (audio.paused) {
+      audio.play();
+    }
+  }, { once: true });
+</script>
 </body>
 </html>
